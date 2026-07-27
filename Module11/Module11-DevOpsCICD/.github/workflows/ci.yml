@@ -1,0 +1,43 @@
+name: .NET CI
+
+# Trigger: runs on every push and every pull request targeting main
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    # Change this to the folder containing your .csproj / .sln
+    defaults:
+      run:
+        working-directory: ./Module6/ProductCatalogAPI
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Test
+        run: dotnet test --no-build --configuration Release --verbosity normal
+
+      # --- Deploy stage placeholder ---
+      # - name: Deploy to Azure App Service
+      #   uses: azure/webapps-deploy@v3
+      #   with:
+      #     app-name: "your-app-name"
+      #     publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
+      #     package: "./Module6/ProductCatalogAPI/bin/Release/net8.0/publish"
