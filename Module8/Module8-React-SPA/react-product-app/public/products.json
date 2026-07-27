@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Wireless Mouse", "price": 599, "isFeatured": true },
+  { "id": 2, "name": "Mechanical Keyboard", "price": 2499, "isFeatured": false },
+  { "id": 3, "name": "USB-C Hub", "price": 1299, "isFeatured": true },
+  { "id": 4, "name": "Laptop Stand", "price": 899, "isFeatured": false }
+]
