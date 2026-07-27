@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  samplewebapp:
+    build:
+      context: ./SampleWebApp
+    ports:
+      - "8080:8080"
+    volumes:
+      - samplewebapp-data:/app/data
+
+volumes:
+  samplewebapp-data:
