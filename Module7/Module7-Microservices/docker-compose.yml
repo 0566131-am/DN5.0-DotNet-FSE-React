@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  productservice:
+    build:
+      context: ./ProductService
+    ports:
+      - "5001:8080"
+
+  orderservice:
+    build:
+      context: ./OrderService
+    ports:
+      - "5002:8080"
+    environment:
+      - ProductService__BaseUrl=http://productservice:8080
+    depends_on:
+      - productservice
+
+# Note: you'll need a Dockerfile in each service folder for this to build.
+# A minimal one for each project looks like:
+#
+# FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+# WORKDIR /src
+# COPY . .
+# RUN dotnet publish -c Release -o /app
+#
+# FROM mcr.microsoft.com/dotnet/aspnet:8.0
+# WORKDIR /app
+# COPY --from=build /app .
+# ENTRYPOINT ["dotnet", "<ProjectName>.dll"]
