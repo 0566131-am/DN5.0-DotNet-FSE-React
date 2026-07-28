@@ -1,0 +1,23 @@
+/* Exercise 4: Media Queries & Responsive Web Design
+   Concepts: media queries, RWD principles */
+
+/* TODO 1: Make .responsive-grid a flex/grid container with 3 equal columns
+   (.col) by default (desktop layout) */
+.responsive-grid {
+
+}
+.col {
+
+}
+
+/* TODO 2: Media query for tablets (max-width: 768px) - stack columns
+   to 2 per row */
+@media (max-width: 768px) {
+
+}
+
+/* TODO 3: Media query for mobile (max-width: 480px) - stack columns
+   to 1 per row and reduce heading font sizes */
+@media (max-width: 480px) {
+
+}

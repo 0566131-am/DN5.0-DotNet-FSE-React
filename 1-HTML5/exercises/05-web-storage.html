@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+  Exercise 5: Web Storage
+  Concepts: localStorage, sessionStorage, removing stored data.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 5 - Web Storage</title>
+</head>
+<body>
+
+  <h2>Notes App (localStorage)</h2>
+  <textarea id="note" rows="4" cols="40" placeholder="Type a note..."></textarea><br>
+  <button id="saveNote">Save (localStorage)</button>
+  <button id="clearNote">Clear</button>
+  <p id="noteStatus"></p>
+
+  <h2>Visit Counter (sessionStorage)</h2>
+  <p id="visitCount"></p>
+
+  <script>
+    // TODO 1: On page load, read 'note' from localStorage and populate
+    // the textarea if it exists.
+
+    // TODO 2: On "Save" click, store the textarea value into
+    // localStorage under key 'note'.
+
+    // TODO 3: On "Clear" click, remove the 'note' key from localStorage
+    // (localStorage.removeItem) and clear the textarea.
+
+    // TODO 4: Using sessionStorage, keep a counter of how many times
+    // this page has been reloaded in the CURRENT browser tab/session
+    // (sessionStorage persists per tab until it's closed, unlike
+    // localStorage which persists indefinitely). Display it in
+    // #visitCount.
+  </script>
+
+</body>
+</html>

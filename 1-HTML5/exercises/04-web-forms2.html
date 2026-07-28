@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+  Exercise 4: Web Forms 2.0
+  Concepts: new <input> types, placeholder, autofocus, required, <output>.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 4 - Web Forms 2.0</title>
+</head>
+<body>
+
+  <h2>Order Form</h2>
+  <form id="orderForm" oninput="total.value = parseInt(qty.value||0) * parseInt(price.value||0)">
+
+    <!-- TODO 1: email input, required, with placeholder -->
+    <label>Email: <input type="email" name="email" required placeholder="you@example.com"></label><br>
+
+    <!-- TODO 2: number input for quantity, autofocus, min="1" -->
+    <label>Quantity: <input type="number" id="qty" name="qty" min="1" autofocus></label><br>
+
+    <!-- TODO 3: number input for price -->
+    <label>Price: <input type="number" id="price" name="price" min="0"></label><br>
+
+    <!-- TODO 4: use <output> to show qty * price automatically -->
+    Total: <output name="total" id="total">0</output><br>
+
+    <!-- TODO 5: date input for delivery date -->
+    <label>Delivery date: <input type="date" name="deliveryDate"></label><br>
+
+    <!-- TODO 6: range input for a "priority" slider 1-5 -->
+    <label>Priority: <input type="range" name="priority" min="1" max="5"></label><br>
+
+    <!-- TODO 7: color input -->
+    <label>Favorite color: <input type="color" name="favColor"></label><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p>Extend this form with a <code>tel</code> input and a <code>search</code> input as extra practice.</p>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+  Exercise 3: Events
+  Concepts: onclick, onchange, onblur, key events, mouse events, ondblclick.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 3 - Events</title>
+</head>
+<body>
+
+  <h2>1. onclick</h2>
+  <!-- TODO 1: Add a button that shows an alert "Button clicked!" on click -->
+  <button id="clickBtn">Click me</button>
+
+  <h2>2. onchange</h2>
+  <!-- TODO 2: Add a <select> with 3 options; when changed, display the
+       selected value in the <p id="changeOutput"> below -->
+  <select id="colorSelect">
+    <option value="">-- choose --</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+  </select>
+  <p id="changeOutput"></p>
+
+  <h2>3. onblur / onfocus</h2>
+  <!-- TODO 3: Add a text input; when it loses focus (blur), validate
+       it is not empty and show an error message in <p id="blurOutput"> -->
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <p id="blurOutput"></p>
+
+  <h2>4. ondblclick</h2>
+  <!-- TODO 4: Add a <div> that changes background color on double-click -->
+  <div id="dblClickBox" style="width:150px;height:80px;border:1px solid #333;">
+    Double-click me
+  </div>
+
+  <h2>5. Key & Mouse events</h2>
+  <!-- TODO 5: Add an input that logs the key pressed (keydown/keyup) and
+       a div that logs mouse coordinates on mousemove -->
+  <input type="text" id="keyInput" placeholder="Type here">
+  <p id="keyOutput"></p>
+  <div id="mouseBox" style="width:200px;height:100px;border:1px solid #333;">
+    Move mouse here
+  </div>
+  <p id="mouseOutput"></p>
+
+  <script>
+    // TODO: implement event listeners for all TODOs above using
+    // addEventListener (e.g. document.getElementById('clickBtn').addEventListener('click', ...))
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS3 Practice</title>
+  <!-- Link each stylesheet as you work through the exercises -->
+  <link rel="stylesheet" href="01-selectors.css">
+  <link rel="stylesheet" href="02-styling.css">
+  <link rel="stylesheet" href="03-box-model.css">
+  <link rel="stylesheet" href="04-responsive.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <h1>CSS3 Practice Page</h1>
+    <nav>
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Selectors Demo</h2>
+      <p class="highlight">This uses a class selector.</p>
+      <p id="intro-text">This uses an id selector.</p>
+      <div class="box special">A div targeted by grouping/class selectors.</div>
+    </section>
+
+    <section class="card">
+      <h2>Styling Demo</h2>
+      <p>Some body text with a <a href="#">link</a> inside it.</p>
+      <ul class="feature-list">
+        <li>Feature one</li>
+        <li>Feature two</li>
+        <li>Feature three</li>
+      </ul>
+      <table class="data-table">
+        <tr><th>Item</th><th>Price</th></tr>
+        <tr><td>Book</td><td>250</td></tr>
+        <tr><td>Pen</td><td>10</td></tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Box Model Demo</h2>
+      <div class="box-model-demo">Box with margin/padding/border/outline</div>
+      <div class="hidden-demo">I use visibility:hidden</div>
+      <div class="display-none-demo">I use display:none</div>
+    </section>
+
+    <section class="card responsive-grid">
+      <div class="col">Column 1</div>
+      <div class="col">Column 2</div>
+      <div class="col">Column 3</div>
+    </section>
+  </main>
+
+</body>
+</html>

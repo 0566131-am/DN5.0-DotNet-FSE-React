@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+  Exercise 6: Geolocation API
+  Concepts: getCurrentPosition, watchPosition, error handling, position options.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 6 - Geolocation</title>
+</head>
+<body>
+
+  <h2>Where am I?</h2>
+  <button id="locateBtn">Get My Location</button>
+  <p id="locationOutput"></p>
+
+  <h2>Live tracking</h2>
+  <button id="watchBtn">Start Watching</button>
+  <button id="stopWatchBtn">Stop Watching</button>
+  <p id="watchOutput"></p>
+
+  <script>
+    // TODO 1: On "Get My Location" click, call navigator.geolocation.getCurrentPosition
+    // with success and error callbacks. On success, show latitude/longitude
+    // and accuracy in #locationOutput. On error, handle:
+    //  - PERMISSION_DENIED
+    //  - POSITION_UNAVAILABLE
+    //  - TIMEOUT
+    // using error.code, and show a friendly message.
+
+    // TODO 2: Pass a PositionOptions object as the 3rd argument:
+    // { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
+
+    // TODO 3: On "Start Watching" click, use navigator.geolocation.watchPosition
+    // to keep updating #watchOutput with the latest coordinates. Store the
+    // returned watch id.
+
+    // TODO 4: On "Stop Watching" click, call navigator.geolocation.clearWatch
+    // with the stored watch id.
+  </script>
+
+</body>
+</html>

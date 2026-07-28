@@ -1,0 +1,41 @@
+/* Exercise 2: CSS Styling
+   Concepts: Color, Background, Fonts, Text, Links, Lists, Tables */
+
+/* TODO 1: Color & Background - give body a background color and text color */
+body {
+
+}
+
+/* TODO 2: Fonts - set a font-family, font-size and font-weight for headings */
+h1, h2 {
+
+}
+
+/* TODO 3: Text - text-align, letter-spacing, text-transform on <section p> */
+section p {
+
+}
+
+/* TODO 4: Links - style :link, :hover, :visited, :active states for .nav-link */
+.nav-link {
+
+}
+.nav-link:hover {
+
+}
+
+/* TODO 5: Lists - remove bullets from .feature-list and add custom spacing */
+.feature-list {
+
+}
+.feature-list li {
+
+}
+
+/* TODO 6: Tables - style .data-table with border-collapse, alternating row colors */
+.data-table {
+
+}
+.data-table th, .data-table td {
+
+}

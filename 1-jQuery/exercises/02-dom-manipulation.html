@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 2 - DOM Manipulation</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+  <h2>Shopping List</h2>
+  <input type="text" id="itemInput" placeholder="New item...">
+  <button id="addBtn">Add to top</button>
+  <button id="addBottomBtn">Add to bottom</button>
+  <ul id="itemList">
+    <li>Milk</li>
+    <li>Bread</li>
+  </ul>
+
+  <button id="cloneLastBtn">Clone last item</button>
+  <button id="clearBtn">Clear list</button>
+
+  <script>
+    $(document).ready(function () {
+      // TODO 1: On #addBtn click, use .prepend() to add a new <li>
+      // with the input value at the TOP of #itemList.
+
+      // TODO 2: On #addBottomBtn click, use .append() to add a new
+      // <li> at the BOTTOM of #itemList.
+
+      // TODO 3: Add a small "x" delete link/button inside each new <li>
+      // that, on click, uses .remove() to delete just that <li>.
+
+      // TODO 4: On #cloneLastBtn click, use .clone() to duplicate the
+      // last <li> in the list and append the clone.
+
+      // TODO 5: On #clearBtn click, use .empty() to remove all <li>
+      // children from #itemList without removing the <ul> itself.
+    });
+  </script>
+
+</body>
+</html>

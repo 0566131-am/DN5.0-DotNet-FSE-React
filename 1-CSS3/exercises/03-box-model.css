@@ -1,0 +1,25 @@
+/* Exercise 3: CSS Box Model
+   Concepts: margin, padding, border, outline, visibility vs display,
+   multiple columns */
+
+/* TODO 1: Give .box-model-demo distinct margin, padding, border and
+   outline values so you can see all four layers in browser dev tools */
+.box-model-demo {
+
+}
+
+/* TODO 2: visibility: hidden - element still takes up layout space */
+.hidden-demo {
+
+}
+
+/* TODO 3: display: none - element is removed from layout entirely */
+.display-none-demo {
+
+}
+
+/* TODO 4: Multiple columns - split a block of text into 2 columns using
+   column-count / column-gap on a new class, e.g. .multi-column */
+.multi-column {
+
+}

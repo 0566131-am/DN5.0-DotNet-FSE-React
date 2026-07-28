@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 3 - Events</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>.hover-box{width:200px;height:100px;border:1px solid #333;}</style>
+</head>
+<body>
+
+  <h2>Event Practice</h2>
+
+  <button id="clickMe">Click Me</button>
+  <p id="clickOutput"></p>
+
+  <div class="hover-box" id="hoverBox">Hover over me</div>
+  <p id="hoverOutput"></p>
+
+  <form id="demoForm">
+    <input type="text" id="username" placeholder="Username" required>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="submitOutput"></p>
+
+  <ul id="dynamicList">
+    <li>Item A <button class="removeBtn">Remove</button></li>
+    <li>Item B <button class="removeBtn">Remove</button></li>
+  </ul>
+
+  <script>
+    $(document).ready(function () {
+      // TODO 1: Use .click() to update #clickOutput when #clickMe is clicked.
+
+      // TODO 2: Use .hover() with two handlers (mouse enter / leave) to
+      // change #hoverBox background color and update #hoverOutput.
+
+      // TODO 3: Use .submit() on #demoForm to prevent the default page
+      // reload (event.preventDefault()) and show a success message in
+      // #submitOutput using the #username value.
+
+      // TODO 4: Use event delegation with .on('click', '.removeBtn', ...)
+      // attached to #dynamicList, so it also works for buttons added
+      // to the list LATER (dynamically), unlike a plain .click() binding.
+
+      // TODO 5: Add a new <li> with its own "Remove" button dynamically
+      // (e.g. via a new button "Add Item") and confirm the delegated
+      // handler from TODO 4 still removes it correctly.
+    });
+  </script>
+
+</body>
+</html>
